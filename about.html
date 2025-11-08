@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Yoga - Yoga Bliss</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ffe4b5;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      font-weight: 500;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 2.5rem;
+      color: #5e412f;
+    }
+
+    .about-section {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+
+    .about-section h2 {
+      color: #f57c00;
+      margin-top: 30px;
+    }
+
+    .about-video {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .about-video video {
+      width: 85%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .heritage-gallery {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .heritage-gallery h2 {
+      margin-bottom: 20px;
+      color: #f57c00;
+      font-size: 1.8rem;
+    }
+
+    .heritage-images {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .heritage-card {
+      background-color: #fff3e0;
+      border-radius: 10px;
+      padding: 15px;
+      width: 300px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .heritage-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .heritage-card:hover {
+      transform: scale(1.03);
+    }
+
+    .heritage-card p {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🧘‍♀️ Yoga Bliss</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="class.html">Classes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <h1>Yoga: Our Ancient Heritage</h1>
+
+  <section class="about-section">
+    <p>
+      Yoga is one of the six orthodox philosophical schools of Hinduism, originating in ancient India over 5,000 years ago. Derived from the Sanskrit root "Yuj", yoga means union – the union of the individual self with the universal consciousness.
+    </p>
+
+    <h2>📜 Evolution of Yoga</h2>
+    <p>
+      The first references to yoga appear in the Rig Veda. Later, the Upanishads and the Bhagavad Gita emphasized the spiritual and meditative aspects. Patanjali systematized yoga practices through his Yoga Sutras in 200 BCE, introducing the 8 limbs of Ashtanga Yoga.
+    </p>
+    <p>
+      Over the centuries, yoga evolved through classical, post-classical, and modern phases, adapting to contemporary lifestyles while preserving its traditional essence.
+    </p>
+
+    <h2>🌍 Modern Yoga Practices</h2>
+    <p>
+      In today’s world, yoga is embraced globally for its physical, mental, and emotional benefits. Various styles like Hatha, Vinyasa, Iyengar, and Power Yoga cater to all levels. Digital platforms and online classes make it more accessible than ever before.
+    </p>
+    <p>
+      Yoga is now integrated with mindfulness, therapy, and fitness, promoting holistic well-being in modern life.
+    </p>
+  </section>
+
+  <section class="about-video">
+    <h2>🎥 Watch: Ancient Yoga Practices</h2>
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section class="heritage-gallery">
+    <h2>📸 Heritage Moments</h2>
+    <div class="heritage-images">
+
+      <div class="heritage-card">
+        <img src="images/pic1.jpeg" alt="Ancient Yoga Script">
+        <p>📖 Ancient manuscripts reveal early yoga teachings in Sanskrit.</p>
+      </div>
+
+      <div class="heritage-card">
+        <img src="images/pic2.jpeg" alt="Traditional Yoga Poses">
+        <p>🧘‍♂️ Classic yoga poses depicted in historic Indian sculptures and texts.</p>
+      </div>
+
+      <div class="heritage-card">
+        <img src="images/pic3.jpeg" alt="Modern Yoga Movement">
+        <p>🌐 Fusion of traditional and modern yoga during global wellness movement.</p>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yoga Online Classes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+ <header>
+  <div class="logo">🧘‍♀️ Yoga Bliss</div>
+  <nav style="display: flex; align-items: center; gap: 20px;">
+    <a href="class.html" style="text-decoration: none; font-weight: 500; color: #333;">Classes</a>
+    <a href="live.html" style="text-decoration: none; font-weight: 500; color: #333;">Live Classes</a>
+    <a href="freevideo.html" style="text-decoration: none; font-weight: 500; color: #333;">Free Videos</a>
+    <a href="about.html" style="text-decoration: none; font-weight: 500; color: #333;">About</a>
+    <a href="contact.html" style="text-decoration: none; font-weight: 500; color: #333;">Contact</a>
+
+    <div style="flex: 1;"></div>
+
+    <button onclick="document.querySelector('.login-popup').style.display = 'flex'">Login</button>
+    <button onclick="document.querySelector('.signup-popup').style.display = 'flex'">Sign Up</button>
+  </nav>
+</header>
+
+
+
+  <section class="hero">
+    <h1>Welcome to Yoga Online Classes</h1>
+    <p>Yoga is a group of physical, mental, and spiritual practices that originated in ancient India. It improves flexibility, boosts mental health, and builds inner peace. Join us for daily sessions to transform your body and mind from the comfort of your home.</p>
+  </section>
+
+  <section class="gallery">
+    <h2>Yoga Sessions & Exercises</h2>
+    <div class="images">
+      <img src="images/yoga1.jpg" alt="Yoga Session 1" />
+      <img src="images/yoga2.jpg" alt="Yoga Session 2" />
+      <img src="images/women.jpeg" alt="Woman doing Yoga" />
+      <img src="images/men.jpg" alt="Man doing Yoga" />
+    </div>
+  </section>
+
+  <section class="benefits">
+    <h2>🧘 Benefits of Yoga</h2>
+    <ul>
+      <li>🧠 Improves mental clarity and concentration</li>
+      <li>🦴 Enhances flexibility and core strength</li>
+      <li>💤 Promotes better sleep and relaxation</li>
+      <li>😌 Reduces anxiety, depression, and stress</li>
+      <li>❤️ Supports a healthy heart and circulation</li>
+    </ul>
+  </section>
+
+
+  <section class="online-benefits">
+    <h2>🌐 Why Choose Online Yoga Classes?</h2>
+    <ul>
+      <li>🏡 Practice anytime, anywhere – from home</li>
+      <li>📺 Access to pre-recorded and live sessions</li>
+      <li>🕐 Flexible timing that fits your routine</li>
+      <li>💰 Affordable, with no travel costs</li>
+      <li>📱 Learn through your phone, tablet, or laptop</li>
+    </ul>
+  </section>
+  <!-- LOGIN POPUP -->
+<div class="login-popup" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.6); display: none; align-items: center; justify-content: center; z-index: 999;">
+  <div class="login-box" style="background: #2c2541; color: white; padding: 40px; border-radius: 12px; width: 90%; max-width: 400px;">
+    <span onclick="document.querySelector('.login-popup').style.display='none'" style="position: absolute; top: 20px; right: 30px; font-size: 2rem; cursor: pointer;">&times;</span>
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Name" required style="width: 100%; padding: 12px; margin: 10px 0; background: #3c3554; border: none; border-radius: 6px; color: white;" />
+      <input type="email" placeholder="Email" required style="width: 100%; padding: 12px; margin: 10px 0; background: #3c3554; border: none; border-radius: 6px; color: white;" />
+      <input type="password" placeholder="Password" required style="width: 100%; padding: 12px; margin: 10px 0; background: #3c3554; border: none; border-radius: 6px; color: white;" />
+      <div style="margin: 10px 0;">
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember me</label>
+      </div>
+      <button type="submit" style="width: 100%; padding: 12px; background: #a78bfa; border: none; border-radius: 6px; color: white; font-weight: bold;">Log In</button>
+    </form>
+    <p style="margin-top: 15px;">Don't have an account? <a href="#" onclick="document.querySelector('.login-popup').style.display='none'; document.querySelector('.signup-popup').style.display='flex';">Sign up</a></p>
+  </div>
+</div>
+<!-- SIGNUP POPUP -->
+<div class="signup-popup" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.6); display: none; align-items: center; justify-content: center; z-index: 999;">
+  <div class="login-box" style="background: #2c2541; color: white; padding: 40px; border-radius: 12px; width: 90%; max-width: 400px;">
+    <span onclick="document.querySelector('.signup-popup').style.display='none'" style="position: absolute; top: 20px; right: 30px; font-size: 2rem; cursor: pointer;">&times;</span>
+    <h2>Create an account</h2>
+    <form>
+      <input type="text" placeholder="First Name" required style="width: 100%; padding: 12px; margin: 10px 0; background: #3c3554; border: none; border-radius: 6px; color: white;" />
+      <input type="text" placeholder="Last Name" required style="width: 100%; padding: 12px; margin: 10px 0; background: #3c3554; border: none; border-radius: 6px; color: white;" />
+      <input type="email" placeholder="Email" required style="width: 100%; padding: 12px; margin: 10px 0; background: #3c3554; border: none; border-radius: 6px; color: white;" />
+      <input type="password" placeholder="Create Password" required style="width: 100%; padding: 12px; margin: 10px 0; background: #3c3554; border: none; border-radius: 6px; color: white;" />
+      <div style="margin: 10px 0;">
+        <input type="checkbox" id="terms" required />
+        <label for="terms">I agree to the <a href="#" style="color: #a78bfa;">Terms & Conditions</a></label>
+      </div>
+      <button type="submit" style="width: 100%; padding: 12px; background: #a78bfa; border: none; border-radius: 6px; color: white; font-weight: bold;">Create Account</button>
+    </form>
+    <p style="margin-top: 15px;">Already have an account? <a href="#" style="color: #a78bfa;" onclick="document.querySelector('.signup-popup').style.display='none'; document.querySelector('.login-popup').style.display='flex';">Log in</a></p>
+  </div>
+</div>
+
+
+  
+
+
+
+  <footer style="background-color: #ffe0b2; text-align: center; padding: 20px; font-size: 1rem;">
+  <p>&copy; 2025 Yoga Bliss. All Rights Reserved.</p>
+  <p>📍 Tamil Nadu, India | 📞 85473-36320</p>
+  <p>📧 <a href="mailto:yogaclassindia@gmail.com">yogaclassindia@gmail.com</a></p>
+  <p>
+    <a href="https://instagram.com" target="_blank" style="margin-right: 10px;">
+      <img src="images/instagram.png" alt="Instagram" width="20" style="vertical-align: middle;" /> Instagram
+    </a>
+    <a href="https://facebook.com" target="_blank">
+      <img src="images/facebook.png" alt="Facebook" width="20" style="vertical-align: middle;" /> Facebook
+    </a>
+  </p>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
